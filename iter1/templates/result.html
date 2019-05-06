@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <h3> Decision </h3>
+
+    <p> Name: {{name}} </p>
+    <p> Amount Requested: ${{amount}} </p>
+    <p> Years in Business: {{years}} </p>
+
+    {%if amount > 50000 and amount < 1%}
+            <p> Loan Application Denied </p>
+
+    {%elif amount < 50000 and amount >= 1%}
+            <p> Loan Application Pre-Approved </p>
+
+    {%else%}
+            <p> Loan Application Is Currently Being Proceesed</p>
+
+    {%endif%}
+
+    <p> <a href='/home/'> Go Back To Home </a> <p>
+    <p> <a href='/app/'> Go Back To Application </a> <p>
+{% endblock %}

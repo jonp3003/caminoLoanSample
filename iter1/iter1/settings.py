@@ -27,7 +27,7 @@ SECRET_KEY = os.environ.get('MY_SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'camfintest1.herokuapp.com']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'peaceful-fjord-99949.herokuapp.com']
 
 
 # Application definition
